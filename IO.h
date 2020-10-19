@@ -29,6 +29,7 @@ private:
 	//Variables
 	WINDOW plc_wndw, tm_wndw, npc_wndw, tpt_wndw, npt_wndw;
 	WINDOW plc_wndw_bx, tm_wndw_bx, npc_wndw_bx, tpt_wndw_bx, npt_wndw_bx;
+	string lst_ch;
 
 	//Functions
 	int fndBnnrStrt(int, int);
@@ -160,12 +161,18 @@ string IO::gtNpt() {
 		c = getchar();
 		if(c == 127 && ch.size() > 0) {
 			ch.pop_back();
+		} else if(c == 27) {
+			fflush(stdin);
+			c = 0;
+			ch = lst_ch;
 		} else ch.push_back(c);
+		
 		wprintw(&npt_wndw, ch.c_str());
 		wrefresh(&npt_wndw);
 	} while(13 != c);
 	
 	ch.pop_back();
+	lst_ch = ch;
 	return ch;
 };
 void IO::clrWndw() {

@@ -1,0 +1,83 @@
+2
+Npc
+Blacksmith's Shop
+Blacksmith
+Joe
+
+hello
+Hey, I am kind of busy right now.
+
+hi
+hey *grunt*
+
+how are you
+Life is hard work.
+
+trigger hear hard pointy thing? drop daggar
+hard pointy thing?
+Well that depends on the service you are requesting. *wink* I know what you mean. The queen wanted this for days. I finally have it ready. Here is her jewel encrusted daggar.
+
+
+said Well that depends on the service you are requesting. *wink* I know what you mean. The queen wanted this for days. I finally have it ready. Here is her jewel encrusted daggar. add 1
+
+Npc
+Courtyard
+Jester
+Jacobs
+
+hello
+hello
+
+hi
+hey
+
+how are you
+I am fantastic! I like the flame. Follow the flame! Follow it!
+
+Npc
+Grand Hall
+Queen
+Jane
+
+trigger hear how are you add 1
+trigger have honey add 1
+trigger have daggar add 1
+trigger have daggar say
+Thank you sweetheart! I like your hard pointy thing.
+
+trigger have honey say
+Thank you honey!
+
+trigger counter 4 say
+Thank you so much! I really appreciate your offerings! I cannot wait to see you tonight babe!
+
+hello
+Hello lovely! *wink*
+
+hi
+hey!
+
+how are you
+I am fine cutie. I remember the nights we spent together. Thank goodness The King doesn't know about us yet. Well, I was wondering if you would meet me tonight. But first, I want you to come prepared. Would you bring a hard pointy thing and some honey?
+
+Npc
+Alchemist's Shop
+Alchemist
+Alfred
+
+trigger have gold drop honey
+trigger have gold add 1
+trigger have gold say
+Thank you GOLD GOLD GOLD! I love it! Oh, you wanted something? Sure, here is your ginseng infused honey.
+
+hello
+Hello! Do you have gold? Goooooold.
+
+hi
+Hello, do you have gold? Goooooold.
+
+how are you
+I am terrible! a theif stole my gold. I am very angry. Would you get it back please? Pleeeeeease? I like gold.
+
+honey?
+I do have some enchanted honey. However, I don't work for free. If you could get my gold back from the theif, I would appreciate it.
